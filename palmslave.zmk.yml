@@ -1,0 +1,11 @@
+file_format: "1"
+id: palmslave
+name: Palmslave
+type: shield
+url: https://github.com/takashicompany/palmslave
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - palmslave_left
+  - palmslave_right

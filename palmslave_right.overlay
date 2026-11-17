@@ -1,0 +1,23 @@
+#include "palmslave.dtsi"
+
+&default_transform {
+	col-offset = <5>;
+};
+
+&kscan0 {
+	/* QMK right cols: B4, E6, D7, C6, D4 （左手と逆順） */
+	col-gpios
+		= <&pro_micro 8 GPIO_ACTIVE_HIGH>
+		, <&pro_micro 7 GPIO_ACTIVE_HIGH>
+		, <&pro_micro 6 GPIO_ACTIVE_HIGH>
+		, <&pro_micro 5 GPIO_ACTIVE_HIGH>
+		, <&pro_micro 4 GPIO_ACTIVE_HIGH>
+		;
+	/* QMK rows: F4, F5, F6, F7 */
+	row-gpios
+		= <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		, <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		, <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		, <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		;
+};

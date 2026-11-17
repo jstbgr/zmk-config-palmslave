@@ -1,0 +1,16 @@
+if SHIELD_PALMSLAVE_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "Palmslave"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_PALMSLAVE_LEFT || SHIELD_PALMSLAVE_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif
