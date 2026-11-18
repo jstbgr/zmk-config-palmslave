@@ -1,11 +1,9 @@
 include:
-  # 左手 = セントラル（PCとUSB/BLEで接続する側）。ZMK Studio対応
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: palmslave_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: palmslave_right
-  # ペアリング情報の初期化用（トラブル時に両手へ書く）
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: settings_reset
